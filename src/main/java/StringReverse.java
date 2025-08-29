@@ -19,15 +19,10 @@ public class StringReverse {
 
             char[] strArray = inputString.toCharArray();
 
-
-
             for (int index = 0; index < strArray.length; index++) {
                 reverseString.append(strArray[strArray.length-1-index]);
             }
-
-
         } else {
-
             System.out.println("Empty Input String");
         }
 
