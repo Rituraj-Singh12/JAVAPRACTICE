@@ -7,12 +7,13 @@ public class StringReverse {
 
         Scanner sc = new Scanner(System.in);
         String inputString = sc.next();
-        String response = reverseString("HELLO WORLD 123456789");
+        String response = reverseString(inputString);
         System.out.println(response);
     }
 
     public static String reverseString(String inputString) {
-        //input --> "HELLO"
+
+
         StringBuilder reverseString = new StringBuilder();
         if (inputString != null && !inputString.isEmpty()) {
             int strLength = inputString.length();
@@ -20,7 +21,7 @@ public class StringReverse {
             char[] strArray = inputString.toCharArray();
 
             for (int index = 0; index < strArray.length; index++) {
-                reverseString.append(strArray[strArray.length-1-index]);
+                reverseString.append(strArray[strArray.length - 1 - index]);
             }
         } else {
             System.out.println("Empty Input String");
